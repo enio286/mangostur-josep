@@ -1,0 +1,128 @@
+.banner {
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner .subtitle {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.tour-details {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section h2 {
+  color: #1a4d3c;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section h2 i {
+  color: #1a4d3c;
+}
+
+.monuments-grid ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.monuments-grid li {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.monuments-grid i {
+  color: #1a4d3c;
+}
+
+.price-card {
+  background: white;
+  border-radius: 10px;
+  top: 2rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: #1a4d3c;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.price-subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.tour-features {
+  margin: 1.5rem 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.feature i {
+  color: #1a4d3c;
+  width: 20px;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 50px 0;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .price-card {
+    position: static !important;
+    margin-top: 2rem;
+  }
+
+  .monuments-grid ul {
+    grid-template-columns: 1fr;
+  }
+}

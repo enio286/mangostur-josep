@@ -1,0 +1,94 @@
+<div class="tour-container">
+  <!-- Sección de Banner -->
+  <div class="banner" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/riohacha/riohacha1.jpg') no-repeat center center; background-size: cover;">
+    <div class="container">
+      <h1>Recorrido en Riohacha</h1>
+      <p class="subtitle">Ruta Virgen de los Remedios</p>
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Información del Tour -->
+      <div class="col-lg-8">
+        <div class="tour-details card shadow">
+          <div class="card-body">
+            <div class="section">
+              <h2><i class="fas fa-clock"></i> Horario de Salida</h2>
+              <p>La salida desde la sede principal en Riohacha, La Guajira, será entre las 09:30 A.M. y las 09:00 A.M.</p>
+            </div>
+
+            <div class="section">
+              <h2><i class="fas fa-check-circle"></i> Incluye</h2>
+              <ul>
+                <li>Recorrido de aproximadamente 3 horas</li>
+                <li>Guía especializado</li>
+                <li>Visitas a sitios históricos y culturales</li>
+                <li>Visita al Centro de Acopio Mujeres Artesanas</li>
+                <li>Visita a artesanías Wayuu</li>
+              </ul>
+
+              <h3>Monumentos a visitar:</h3>
+              <div class="monuments-grid">
+                <ul>
+                  <li *ngFor="let monumento of monumentos">
+                    <i class="fas fa-landmark"></i> {{monumento}}
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="section">
+              <h2><i class="fas fa-times-circle"></i> No Incluye</h2>
+              <ul>
+                <li>Agua para el consumo personal</li>
+                <li>Refrigerios</li>
+              </ul>
+            </div>
+
+            <div class="section">
+              <h2><i class="fas fa-exclamation-triangle"></i> Recomendaciones</h2>
+              <ul>
+                <li>Mantenerse hidratados</li>
+                <li>Tener cuidado con la exposición al sol</li>
+                <li>Prestar mucha atención a las recomendaciones del guía</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar con Precio y Reserva -->
+      <div class="col-lg-4">
+        <div class="price-card card shadow sticky-top">
+          <div class="card-body">
+            <h3 class="price">$100.000 COP</h3>
+            <p class="price-subtitle">por persona</p>
+            
+            <div class="tour-features">
+              <div class="feature">
+                <i class="fas fa-clock"></i>
+                <span>3 horas de recorrido</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-user-tie"></i>
+                <span>Guía especializado</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-camera"></i>
+                <span>Fotos permitidas</span>
+              </div>
+            </div>
+
+            <button class="btn btn-success btn-lg w-100 mt-3">Reservar Ahora</button>
+            
+            <p class="disclaimer mt-3">
+              TARIFAS SUJETAS A CAMBIO Y DISPONIBILIDAD SIN PREVIO AVISO
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

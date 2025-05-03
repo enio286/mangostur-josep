@@ -1,0 +1,248 @@
+.banner {
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .banner h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .banner .subtitle {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .tour-details {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+  
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  
+    h2 {
+      color: #1a4d3c;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      i {
+        color: #1a4d3c;
+      }
+    }
+  
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+  
+      li {
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+  
+        &:before {
+          content: "•";
+          color: #1a4d3c;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+  
+  .day-itinerary {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1a4d3c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  
+    h3 {
+      color: #1a4d3c;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      i {
+        color: #1a4d3c;
+      }
+    }
+  
+    .sub-places {
+      margin-top: 0.5rem;
+      margin-left: 1.5rem;
+      padding-left: 1rem;
+      border-left: 2px solid rgba(26, 77, 60, 0.2);
+  
+      li {
+        margin-bottom: 0.4rem;
+        font-size: 0.95rem;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  .price-card {
+    background: white;
+    border-radius: 10px;
+    top: 2rem;
+    transition: all 0.3s ease;
+  
+    &.sticky-top {
+      z-index: 1020;
+    }
+  
+    .price-section {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  
+    .price {
+      font-size: 2.5rem;
+      color: #1a4d3c;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  
+    .price-subtitle {
+      color: #666;
+      margin-bottom: 0;
+    }
+  
+    .tour-features {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+  
+      .feature {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border-bottom: 1px solid rgba(26, 77, 60, 0.1);
+  
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom: none;
+        }
+  
+        i {
+          color: #1a4d3c;
+          width: 20px;
+          text-align: center;
+        }
+  
+        span {
+          color: #2c3e50;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  
+    .btn-success {
+      background-color: #1a4d3c;
+      border-color: #1a4d3c;
+      padding: 0.8rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: darken(#1a4d3c, 10%);
+        border-color: darken(#1a4d3c, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+    }
+  
+    .disclaimer {
+      font-size: 0.8rem;
+      color: #666;
+      text-align: center;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+  }
+  
+
+  @media (max-width: 992px) {
+    .price-card {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      padding: 50px 0;
+  
+      h1 {
+        font-size: 2.5rem;
+      }
+  
+      .subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  
+    .day-itinerary {
+      padding: 1rem;
+    }
+  
+    .section h2 {
+      font-size: 1.3rem;
+    }
+  
+    .price-card {
+      position: static !important;
+  
+      .price {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner h1 {
+      font-size: 2rem;
+    }
+  
+    .day-itinerary {
+      margin-bottom: 1.5rem;
+  
+      h3 {
+        font-size: 1.2rem;
+      }
+  
+      .sub-places {
+        margin-left: 1rem;
+      }
+    }
+  }

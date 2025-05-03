@@ -1,0 +1,170 @@
+.banner {
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .banner h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .banner .subtitle {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .tour-details {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .section h2 {
+    color: #1a4d3c;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .section h2 i {
+    color: #1a4d3c;
+  }
+  
+  .day-itinerary {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1a4d3c;
+  }
+  
+  .day-itinerary:last-child {
+    margin-bottom: 0;
+  }
+  
+  .day-itinerary h3 {
+    color: #1a4d3c;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .day-itinerary ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .day-itinerary ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .day-itinerary ul li:before {
+    content: "•";
+    color: #1a4d3c;
+    position: absolute;
+    left: 0;
+  }
+  
+  .sub-places {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid rgba(26, 77, 60, 0.2);
+  }
+  
+  .price-card {
+    background: white;
+    border-radius: 10px;
+    top: 2rem;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+    color: #1a4d3c;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .price-subtitle {
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tour-features {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(26, 77, 60, 0.1);
+  }
+  
+  .feature:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  .feature i {
+    color: #1a4d3c;
+    width: 20px;
+  }
+  
+  .disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      padding: 50px 0;
+    }
+  
+    .banner h1 {
+      font-size: 2.5rem;
+    }
+  
+    .price-card {
+      position: static !important;
+      margin-top: 2rem;
+    }
+  
+    .day-itinerary {
+      padding: 1rem;
+    }
+  
+    .sub-places {
+      margin-left: 1rem;
+    }
+  }

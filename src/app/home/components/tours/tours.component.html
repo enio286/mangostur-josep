@@ -1,0 +1,51 @@
+<section class="tours-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Nuestros Tours en La Guajira</h2>
+      
+      <!-- Filtros -->
+      <div class="tour-filters mb-4">
+        <div class="row">
+          <div class="col-md-3">
+            <select class="form-select" [(ngModel)]="selectedDuration" (ngModelChange)="filterTours()">
+              <option value="">Duración</option>
+              <option value="1">1 día</option>
+              <option value="2">2 días</option>
+              <option value="3">3 días</option>
+              <option value="4">4 días</option>
+              <option value="5">5 días</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-select" [(ngModel)]="selectedDestination" (ngModelChange)="filterTours()">
+              <option value="">Destino</option>
+              <option value="cabo">Cabo de la Vela</option>
+              <option value="punta">Punta Gallina</option>
+              <option value="mayapo">Mayapo</option>
+              <option value="camarones">Camarones</option>
+              <option value="palomino">Palomino</option>
+            </select>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Lista de Tours -->
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" *ngFor="let tour of filteredTours">
+          <div class="card h-100 tour-card">
+            <div class="tour-badge" *ngIf="tour.popular">Popular</div>
+            <img [src]="tour.image" class="card-img-top" [alt]="tour.title">
+            <div class="card-body">
+              <h5 class="card-title">{{tour.title}}</h5>
+              <p class="card-text">{{tour.description}}</p>
+              <div class="tour-details">
+                <span><i class="far fa-clock"></i> {{tour.duration}}</span>
+                <span *ngIf="tour.nights"><i class="fas fa-moon"></i> {{tour.nights}} noche(s)</span>
+                <span class="text-success fw-bold">$ {{tour.price | number}}</span>
+              </div>
+              <button class="btn btn-success w-100 mt-3"  (click)="verDetalles(tour.id)">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

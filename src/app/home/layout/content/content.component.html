@@ -1,0 +1,93 @@
+<!-- Hero Section -->
+<section class="hero-section text-white text-center py-5" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/hero-bg.jpg') center/cover;">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold">Descubre Nuevos Destinos</h1>
+      <p class="lead">Explora los mejores lugares turísticos con Mangos Tour</p>
+      <button class="btn btn-success btn-lg" (click)="router.navigate(['/tours'])" >Ver Destinos</button>
+    </div>
+  </section>
+  
+  <!-- Destinos Populares -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Destinos Populares</h2>
+      <div class="row g-4">
+        <!-- Tarjeta de Destino 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="../../../../assets/images/riohacha/riohacha1.jpg" class="card-img-top" alt="Destino 1">
+            <div class="card-body">
+              <h5 class="card-title">Recorrido en Riohacha</h5>
+              <p class="card-text">Ruta; Virgen de los remedios. 
+                La salida desde la sede principal en Riohacha, La Guajira, será entre las 07:30 A.M. y las 08:00 A.M.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-success fw-bold">Desde $100.000 COP </span>
+                <button class="btn btn-outline-success" (click)="router.navigate(['/recorridoenriohacha'])">Ver más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Tarjeta de Destino 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/destino2.jpg" class="card-img-top" alt="Destino 2">
+            <div class="card-body">
+              <h5 class="card-title">Pasadía; Palomino.</h5>
+              <p class="card-text">Dulce y sal; Disfruta del mar y el rio.
+
+                Salida desde la sede principal; Riohacha, La Guajira. Hora de salida; 07:30A.M. - 08:00A.M.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-success fw-bold">Desde $230.000. COP</span>
+                <button class="btn btn-outline-success">Ver más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Tarjeta de Destino 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/destino3.jpg" class="card-img-top" alt="Destino 3">
+            <div class="card-body">
+              <h5 class="card-title">Pasa día cabo de la vela.</h5>
+              <p class="card-text">Salida desde la sede principal; Riohacha, La Guajira. Hora de salida; 05:30A.M. 06:00A.M .Incluye; Recorrido, Playas de Mayapo, Playas de el Pajaro.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-success fw-bold">Desde $200.000 COP</span>
+                <button class="btn btn-outline-success">Ver más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección de Servicios -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Nuestros Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-3 text-center">
+          <i class="fas fa-hotel fs-1 text-success mb-3"></i>
+          <h5>Hospedaje</h5>
+          <p>Hoteles de calidad seleccionados</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <i class="fas fa-bus fs-1 text-success mb-3"></i>
+          <h5>Transporte</h5>
+          <p>Traslados seguros y cómodos</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <i class="fas fa-utensils fs-1 text-success mb-3"></i>
+          <h5>Alimentación</h5>
+          <p>Gastronomía local y variada</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <i class="fas fa-map-marked-alt fs-1 text-success mb-3"></i>
+          <h5>Guías Turísticos</h5>
+          <p>Expertos conocedores locales</p>
+        </div>
+      </div>
+    </div>
+  </section>
