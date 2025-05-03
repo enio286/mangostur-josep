@@ -1,0 +1,20 @@
+{
+  "routes": [
+    "/cabodelaveladosdiasunanoche",
+    "/cabodelavelapuntagallinacamaronescincodiascuatronoches",
+    "/cabodelavelapuntagallinacuatrodiasdrestresnoches",
+    "/cabodelavelatresdiasdosnoches",
+    "/cabodelavelaypuntagallinadosdiasunanoche",
+    "/cabodelavelaypuntagallinatresdiasdosnoches",
+    "/crear-reserva",
+    "/home",
+    "/login",
+    "/pasadiacabodelavela",
+    "/pasadiacamarones",
+    "/pasadiapalomino",
+    "/recorridoenriohacha",
+    "/register",
+    "/tarde-de-rancheria",
+    "/tours"
+  ]
+}
